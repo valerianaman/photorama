@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		E21BEA2E2B0BA54A00E93160 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BEA2D2B0BA54A00E93160 /* AppDelegate.swift */; };
 		E21BEA302B0BA54A00E93160 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BEA2F2B0BA54A00E93160 /* SceneDelegate.swift */; };
-		E21BEA322B0BA54B00E93160 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BEA312B0BA54B00E93160 /* ViewController.swift */; };
 		E21BEA352B0BA54B00E93160 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21BEA332B0BA54B00E93160 /* Main.storyboard */; };
 		E21BEA372B0BA54F00E93160 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21BEA362B0BA54F00E93160 /* Assets.xcassets */; };
 		E21BEA3A2B0BA54F00E93160 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E21BEA382B0BA54F00E93160 /* LaunchScreen.storyboard */; };
 		E21BEA452B0BA55000E93160 /* PhotoramaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BEA442B0BA55000E93160 /* PhotoramaTests.swift */; };
 		E21BEA4F2B0BA55000E93160 /* PhotoramaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BEA4E2B0BA55000E93160 /* PhotoramaUITests.swift */; };
 		E21BEA512B0BA55000E93160 /* PhotoramaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21BEA502B0BA55000E93160 /* PhotoramaUITestsLaunchTests.swift */; };
+		E28904342B0C822E00CC59FB /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28904332B0C822E00CC59FB /* PhotosViewController.swift */; };
+		E28904362B0C84AA00CC59FB /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28904352B0C84AA00CC59FB /* FlickrAPI.swift */; };
+		E28904382B0C8C5100CC59FB /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28904372B0C8C5100CC59FB /* PhotoStore.swift */; };
+		E289043A2B0C9E4500CC59FB /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28904392B0C9E4500CC59FB /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		E21BEA2A2B0BA54A00E93160 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21BEA2D2B0BA54A00E93160 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E21BEA2F2B0BA54A00E93160 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E21BEA312B0BA54B00E93160 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E21BEA342B0BA54B00E93160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E21BEA362B0BA54F00E93160 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E21BEA392B0BA54F00E93160 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		E21BEA4A2B0BA55000E93160 /* PhotoramaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoramaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E21BEA4E2B0BA55000E93160 /* PhotoramaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoramaUITests.swift; sourceTree = "<group>"; };
 		E21BEA502B0BA55000E93160 /* PhotoramaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoramaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E28904332B0C822E00CC59FB /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		E28904352B0C84AA00CC59FB /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		E28904372B0C8C5100CC59FB /* PhotoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		E28904392B0C9E4500CC59FB /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 			children = (
 				E21BEA2D2B0BA54A00E93160 /* AppDelegate.swift */,
 				E21BEA2F2B0BA54A00E93160 /* SceneDelegate.swift */,
-				E21BEA312B0BA54B00E93160 /* ViewController.swift */,
 				E21BEA332B0BA54B00E93160 /* Main.storyboard */,
 				E21BEA362B0BA54F00E93160 /* Assets.xcassets */,
 				E21BEA382B0BA54F00E93160 /* LaunchScreen.storyboard */,
 				E21BEA3B2B0BA54F00E93160 /* Info.plist */,
+				E28904332B0C822E00CC59FB /* PhotosViewController.swift */,
+				E28904352B0C84AA00CC59FB /* FlickrAPI.swift */,
+				E28904372B0C8C5100CC59FB /* PhotoStore.swift */,
+				E28904392B0C9E4500CC59FB /* Photo.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21BEA322B0BA54B00E93160 /* ViewController.swift in Sources */,
+				E289043A2B0C9E4500CC59FB /* Photo.swift in Sources */,
+				E28904382B0C8C5100CC59FB /* PhotoStore.swift in Sources */,
+				E28904342B0C822E00CC59FB /* PhotosViewController.swift in Sources */,
 				E21BEA2E2B0BA54A00E93160 /* AppDelegate.swift in Sources */,
 				E21BEA302B0BA54A00E93160 /* SceneDelegate.swift in Sources */,
+				E28904362B0C84AA00CC59FB /* FlickrAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +461,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,6 +489,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
